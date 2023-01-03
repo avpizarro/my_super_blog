@@ -1,5 +1,6 @@
 import React from "react";
 import { format } from 'date-fns';
+import Image from 'next/image';
 import Head from 'next/head';
 
 import { client } from '../../lib/client';
@@ -23,7 +24,7 @@ const Post = ({ post }) =>
     const serializers = {
         types: {
           image: props => (
-            <img src={urlFor(props.node.asset).width(1000).url()}  alt={props.node.caption}/>
+            <Image src={urlFor(props.node.asset).url()}  width="1000" height="750" alt={props.node.caption}/>
           )
         }
       };

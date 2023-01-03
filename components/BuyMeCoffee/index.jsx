@@ -10,9 +10,7 @@ const BuyMeCoffee = ({ className }) => {
       <div className={cl(className, styles.buyCoffee)}>
         <a
           href="#"
-          target="_blank"
           className={styles.buyCoffeeButton}
-          rel="nonreferrer"
         >
           Buy me a coffee...
         </a>
